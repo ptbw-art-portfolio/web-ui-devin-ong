@@ -1,0 +1,242 @@
+/*//*/
+/*//*/
+/*//*/
+/*//*/
+/*//*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 90vw;
+  width: 100%;
+  margin: 0 auto;
+}
+.foodie_header_img {
+  background: url('../img/header_img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 85%;
+  background-size: 95vw;
+  max-width: 80vw;
+  height: 70vh;
+  margin: 0 auto;
+}
+.foodie_header_img .container_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.foodie_header_img .container_nav .logo_img {
+  color: white;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-family: 'Indie Flower';
+}
+.foodie_header_img .container_nav nav {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.foodie_header_img .container_nav nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-family: 'Varela';
+}
+.foodie_header_img .container_header_phrase {
+  width: 40%;
+  margin: 0 auto;
+}
+.foodie_header_img .container_header_phrase .foodie_header_phrase {
+  flex-direction: column;
+  padding-top: 55vh;
+  display: flex;
+  align-items: center;
+}
+.foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase1 {
+  color: white;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'Varela';
+}
+.foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase2 {
+  color: #f38124;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: 'Varela';
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container div {
+  width: 40rem;
+  height: 40rem;
+  border: 1px solid black;
+  margin: 0.5rem;
+}
