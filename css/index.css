@@ -198,13 +198,13 @@ img {
 }
 .foodie_header_img .container_nav .logo_img {
   color: #F5EDF6;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 2.8rem;
   font-family: 'Indie Flower';
 }
 .foodie_header_img .container_nav nav {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-right: 1rem;
 }
 .foodie_header_img .container_nav nav a {
@@ -226,7 +226,7 @@ img {
   flex-direction: column;
   display: flex;
   align-items: center;
-  padding-bottom: 5vh;
+  padding-bottom: 7vh;
 }
 .foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase1 {
   color: #F5EDF6;
