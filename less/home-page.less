@@ -3,14 +3,21 @@
     flex-wrap: wrap;
     justify-content: center;
     div{
-        width: 40rem;
-        height: 40rem;
+        width: 55vh;
+        height: 55vh; 
         border: 1px solid black;
-        margin: 0.5rem;
+        margin: 1rem; 
+        box-shadow: 0.3rem 0.4rem 0.4rem rgba(41, 40, 40, 0.3);
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 400ms ease-out;
+        }
+        img:hover{
+            transform: scale(1.15);
+        }
     }
-}
-.box1{
-    background: url('../img/img1.jpg');
-    background-position: center;
-    
+
 }
