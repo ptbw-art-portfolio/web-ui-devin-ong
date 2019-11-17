@@ -1,20 +1,23 @@
 .foodie_header_img {
     background: url('../img/header_img.jpg');
+    background-attachment: fixed;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 85%;
-    background-size: 100%;
-    max-width: 95vw;
-    height: 40vw;
-    margin: 0 auto;
-    .overlay{
-        height:100%;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+
+    /*overlay put layer of black on header,
+    also is a flexbox container*/
+    .overlay {
+        height: 100%;
         width: 100%;
-        background-color: rgba(27, 27, 27,0.5);
-        display:flex;
+        background-color: rgba(27, 27, 27, 0.5);
+        display: flex;
         justify-content: space-between;
         flex-direction: column;
     }
+
     .container_nav {
         display: flex;
         justify-content: space-between;
@@ -29,7 +32,8 @@
 
         nav {
             margin-top: 2rem;
-            margin-right: 1rem;
+            text-align: right;
+            width: 100%;
 
             a {
                 text-decoration: none;
@@ -38,9 +42,10 @@
                 margin-right: 1rem;
                 font-size: 1.2rem;
                 letter-spacing: 2px;
-                font-family: 'Varela';
+                font-family: 'Open Sans', sans-serif;
             }
-            a:hover{
+
+            a:hover {
                 color: orange;
             }
         }
@@ -48,29 +53,74 @@
 
     .container_header_phrase {
         width: 100%;
+
         .foodie_header_phrase {
             display: flex;
             flex-direction: column;
             display: flex;
             align-items: center;
-            padding-bottom: 7vh;
+            text-align: center;
+            line-height: 3rem;
+
+            .header_phrase2 {
+                color: @white-smoke;
+                font-size: 3.5rem;
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 0.8rem;
+
+            }
 
             .header_phrase1 {
                 color: @white-smoke;
-                font-size: 2.2rem;
+                font-size: 1.9rem;
                 text-transform: uppercase;
-                font-family: 'Varela';
+                font-family: 'Open Sans', sans-serif;
+                margin-top: 2rem;
+                letter-spacing: 0.3rem;
 
             }
 
-            .header_phrase2 {
-                color: rgb(243, 129, 36);
-                font-size: 3.5rem;
-                text-transform: uppercase;
-                font-family: 'Varela';
-            }
+
         }
 
     }
+
+    .header_btn {
+        color: @white-smoke;
+        background-color: rgb(236, 72, 52);
+        width: 17rem;
+        height: 4rem;
+        padding-top: 0.5rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .header_btn:hover {
+        background-color: rgb(240, 94, 75);
+    }
+
+    .header_learn {
+        color: @white-smoke;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+
+    }
+
+    .header_learn::after {
+        background-image: url('../img/arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        content: '';
+        display: block;
+        height: 7rem;
+    }
+
 
 }
