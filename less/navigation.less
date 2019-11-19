@@ -8,16 +8,15 @@
     height: 100vh;
 
     @keyframes setBackground {
-        from {
-            background: @outer-space;
+        from { 
         }
-
-        to {
-            background: url('../img/header_img.jpg');
+        to{
+            background: url('../img/header_img.jpg') @outer-space;
             background-attachment: fixed;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            
         }
     }
 

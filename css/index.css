@@ -187,11 +187,8 @@ img {
     also is a flexbox container*/
 }
 @keyframes setBackground {
-  from {
-    background: #464655;
-  }
   to {
-    background: url('../img/header_img.jpg');
+    background: url('../img/header_img.jpg') #464655;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
