@@ -136,6 +136,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -240,6 +241,9 @@ img {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.8rem;
+  animation: appearslowly;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 .foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase1 {
   color: #F5EDF6;
@@ -248,6 +252,9 @@ img {
   font-family: 'Open Sans', sans-serif;
   margin-top: 2rem;
   letter-spacing: 0.3rem;
+  animation: appearslowly;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 .foodie_header_img .header_btn {
   color: #F5EDF6;
@@ -260,6 +267,19 @@ img {
   margin: 0 auto;
   margin-top: 2rem;
   letter-spacing: 0.4rem;
+  animation: appearslowly;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+@keyframes appearslowly {
+  from {
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+  }
 }
 .foodie_header_img .header_btn:hover {
   background-color: #f05e4b;
@@ -271,6 +291,15 @@ img {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  text-decoration: none;
+  visibility: hidden;
+  animation: appearslowly;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.foodie_header_img .header_learn:active {
+  text-decoration: none;
 }
 .foodie_header_img .header_learn::after {
   background-image: url('../img/arrow.svg');
