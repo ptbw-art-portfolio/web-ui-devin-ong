@@ -256,6 +256,9 @@ img {
   animation-duration: 4s;
   animation-fill-mode: forwards;
 }
+.foodie_header_img a {
+  text-decoration: none;
+}
 .foodie_header_img .header_btn {
   color: #F5EDF6;
   background-color: #ec4834;
@@ -291,15 +294,11 @@ img {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  text-decoration: none;
   visibility: hidden;
   animation: appearslowly;
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
-}
-.foodie_header_img .header_learn:active {
-  text-decoration: none;
 }
 .foodie_header_img .header_learn::after {
   background-image: url('../img/arrow.svg');
