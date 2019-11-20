@@ -208,6 +208,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 3;
 }
 .foodie_header_img .container_nav .logo_img {
   color: #F5EDF6;
@@ -330,27 +331,35 @@ img {
   background-size: cover;
   text-align: center;
 }
+.container .box {
+  position: relative;
+}
+.container .box:hover .author_name {
+  visibility: visible;
+}
+.container .author_name {
+  color: #F5EDF6;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-shadow: 1px 1px 0 black;
+  visibility: hidden;
+}
 .container div {
   max-width: 450px;
   max-height: 450px;
   overflow: hidden;
-  position: relative;
+  z-index: 2;
 }
 .container div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
-.container div .author_name {
-  position: absolute;
-  color: #F5EDF6;
-  font-size: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 1px 1px 0 black;
-  bottom: 20px;
-  left: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
+.container div img:hover {
+  transform: scale(1.15);
 }
 /*call too action*/
 .call_action {
