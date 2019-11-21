@@ -188,7 +188,7 @@ img {
 }
 @keyframes setBackground {
   to {
-    background: url('../img/header_img.jpg') #464655;
+    background: url('../../img/header_img.jpg') #464655;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -311,7 +311,7 @@ img {
   animation-fill-mode: forwards;
 }
 .foodie_header_img .header_learn::after {
-  background-image: url('/img/arrow.svg');
+  background-image: url('../../img/arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
   content: '';
@@ -324,7 +324,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.4)), url('../img/header_img.jpg') center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.4)), url('../../img/header_img.jpg') center center;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ img {
 }
 /*call too action*/
 .call_action {
-  background: url('../img/header_img.jpg');
+  background: url('../../img/header_img.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
