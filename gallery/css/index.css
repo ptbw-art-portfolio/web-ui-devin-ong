@@ -1,3 +1,16 @@
+.mainFont {
+  font-family: 'Open Sans', sans-serif;
+}
+/**************Animation******************/
+/**************Background******************/
+.backgroundIt {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/**************Buttons******************/
+/**************Display******************/
 /*//*/
 /*//*/
 /*//*/
@@ -175,17 +188,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.foodie_header_img {
-  background: #464655;
-  animation: setBackground;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  text-align: center;
-  height: 100vh;
-  /*overlay put layer of black on header,
-    also is a flexbox container*/
-}
+/**************Keyframes******************/
 @keyframes setBackground {
   to {
     background: url('../../img/header_img.jpg') #464655;
@@ -195,17 +198,37 @@ img {
     background-size: cover;
   }
 }
+@keyframes appearslowly {
+  from {
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+  }
+}
+.foodie_header_img {
+  background: #464655;
+  text-align: center;
+  height: 100vh;
+  animation: setBackground;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  /*overlay put layer of black on header,
+    also is a flexbox container*/
+}
 .foodie_header_img .overlay {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   background-color: rgba(27, 27, 27, 0.5);
-  display: flex;
   justify-content: space-between;
-  flex-direction: column;
 }
 .foodie_header_img .container_nav {
-  position: fixed;
   display: flex;
+  flex-direction: row;
+  position: fixed;
   justify-content: space-between;
   width: 100%;
   z-index: 3;
@@ -239,8 +262,8 @@ img {
   width: 100%;
 }
 .foodie_header_img .container_header_phrase .foodie_header_phrase {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   line-height: 3rem;
@@ -253,6 +276,7 @@ img {
   letter-spacing: 0.8rem;
   animation: appearslowly;
   animation-duration: 4s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 .foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase1 {
@@ -264,6 +288,7 @@ img {
   letter-spacing: 0.3rem;
   animation: appearslowly;
   animation-duration: 4s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 .foodie_header_img a {
@@ -280,19 +305,7 @@ img {
   margin: 0 auto;
   margin-top: 2rem;
   letter-spacing: 0.4rem;
-  animation: appearslowly;
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-}
-@keyframes appearslowly {
-  from {
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-  }
+  font-family: 'Open Sans', sans-serif;
 }
 .foodie_header_img .header_btn:hover {
   background-color: #f05e4b;
@@ -331,7 +344,7 @@ img {
   background-size: cover;
   text-align: center;
 }
-/*call too action*/
+/***************Call-To-Action************/
 .call_action {
   background: url('../../img/header_img.jpg');
   background-attachment: fixed;
@@ -341,6 +354,9 @@ img {
   height: 40vh;
   color: #F5EDF6;
   width: 100%;
+}
+.call_action a {
+  text-decoration: none;
 }
 .call_action .overlay {
   background-color: rgba(27, 27, 27, 0.5);
@@ -376,10 +392,11 @@ img {
   font-family: 'Open Sans', sans-serif;
 }
 .call_action .overlay .action_btn div {
-  color: #F5EDF6;
   background-color: #ec4834;
   width: 20rem;
   height: 4rem;
+  padding-top: 0.5rem;
+  color: #F5EDF6;
   padding-top: 0.9rem;
   border-radius: 1rem;
   font-size: 1.7rem;
@@ -389,8 +406,6 @@ img {
 }
 .call_action .overlay .action_btn div:hover {
   background-color: #f05e4b;
-  width: 20rem;
-  height: 4rem;
 }
 .container {
   display: flex;
@@ -426,6 +441,10 @@ footer .container_footer_inner {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+footer .footer_icons a {
+  text-decoration: none;
+  color: #B7B6C1;
 }
 footer .footer_icons i {
   margin: 2rem;
