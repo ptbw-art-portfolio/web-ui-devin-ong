@@ -206,13 +206,33 @@ img {
     visibility: visible;
   }
 }
+@keyframes borderMoveTop {
+  from {
+    width: 0.1rem;
+    margin-right: 18rem;
+  }
+  to {
+    width: 18rem;
+    margin-right: 0rem;
+  }
+}
+@keyframes borderMoveBottom {
+  from {
+    width: 0.1rem;
+    margin-left: 18rem;
+  }
+  to {
+    width: 18rem;
+    margin-left: 0rem;
+  }
+}
 .foodie_header_img {
   background: #464655;
   text-align: center;
   height: 100vh;
   animation: setBackground;
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   /*overlay put layer of black on header,
     also is a flexbox container*/
@@ -268,15 +288,40 @@ img {
   text-align: center;
   line-height: 3rem;
 }
+.foodie_header_img .container_header_phrase .foodie_header_phrase .headertop_container {
+  border-top: 2px solid #F5EDF6;
+  width: 0.1rem;
+  height: 2rem;
+  animation: borderMoveTop;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  margin-right: 18rem;
+}
+.foodie_header_img .container_header_phrase .foodie_header_phrase .headerbottom_container {
+  border-bottom: 2px solid #F5EDF6;
+  width: 0.1rem;
+  height: 2rem;
+  animation: borderMoveBottom;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  margin-left: 18rem;
+}
 .foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase2 {
   color: #F5EDF6;
   font-size: 3rem;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.8rem;
+  visibility: hidden;
+  text-shadow: 1px #F5EDF6;
+  font-weight: bold;
   animation: appearslowly;
-  animation-duration: 4s;
-  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 .foodie_header_img .container_header_phrase .foodie_header_phrase .header_phrase1 {
@@ -286,9 +331,10 @@ img {
   font-family: 'Open Sans', sans-serif;
   margin-top: 2rem;
   letter-spacing: 0.3rem;
+  visibility: hidden;
   animation: appearslowly;
   animation-duration: 4s;
-  animation-delay: 0s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 .foodie_header_img a {
@@ -306,6 +352,11 @@ img {
   margin-top: 2rem;
   letter-spacing: 0.4rem;
   font-family: 'Open Sans', sans-serif;
+  visibility: hidden;
+  animation: appearslowly;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 .foodie_header_img .header_btn:hover {
   background-color: #f05e4b;
@@ -334,10 +385,7 @@ img {
   margin-top: 1rem;
 }
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.4)), url('../../img/header_img.jpg') center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.4)), url('../../img/header_img.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -393,7 +441,7 @@ img {
 }
 .call_action .overlay .action_btn div {
   background-color: #ec4834;
-  width: 20rem;
+  width: 22rem;
   height: 4rem;
   padding-top: 0.5rem;
   color: #F5EDF6;
@@ -403,6 +451,7 @@ img {
   margin: 0 auto;
   margin-top: 2rem;
   letter-spacing: 0.4rem;
+  text-transform: uppercase;
 }
 .call_action .overlay .action_btn div:hover {
   background-color: #f05e4b;
@@ -417,10 +466,14 @@ img {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   text-align: left;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  letter-spacing: 0.4rem;
 }
 .container .author_info .author_by {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 .container .author_info .author_by .authorNameIs {
   margin-left: 2rem;

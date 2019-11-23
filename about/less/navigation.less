@@ -12,11 +12,32 @@
     to {visibility: visible;}
 }
 
+@keyframes borderMoveTop{
+    from{
+      width: 0.1rem;
+      margin-right: 18rem;
+    }
+    to{
+      width: 18rem;
+      margin-right: 0rem;
+    }
+  }
+  @keyframes borderMoveBottom{
+    from{
+      width: 0.1rem;
+      margin-left: 18rem;
+    }
+    to{
+      width: 18rem;
+      margin-left: 0rem;
+    }
+  }
+
 .foodie_header_img {
     background: @outer-space;
     text-align: center;
     height: 100vh;
-    .animateIt(setBackground, 2s, 1s, forwards);
+    .animateIt(setBackground, 5s, 2s, forwards);
 
     /*overlay put layer of black on header,
     also is a flexbox container*/
@@ -71,13 +92,40 @@
             text-align: center;
             line-height: 3rem;
 
+            .headertop_container{
+                border-top: 2px solid @white-smoke;
+                width: 0.1rem;
+                height: 2rem;
+                animation: borderMoveTop;
+                animation-delay: 1s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+                margin-right: 18rem;
+              }
+
+              .headerbottom_container{
+                border-bottom: 2px solid @white-smoke;
+                width: 0.1rem;
+                height: 2rem;
+                animation: borderMoveBottom;
+                animation-delay: 1s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+                margin-left: 18rem;
+              }
+
             .header_phrase2 {
                 color: @white-smoke;
                 font-size: 3rem;
                 text-transform: uppercase;
                 .mainFont;
                 letter-spacing: 0.8rem;
-                .animateIt(appearslowly, 4s, 0s, forwards);
+                visibility: hidden;
+                text-shadow: 1px @white-smoke;
+                font-weight: bold;
+                .animateIt(appearslowly, 1s, 1s, forwards);
             }
 
             .header_phrase1 {
@@ -87,7 +135,8 @@
                 .mainFont;
                 margin-top: 2rem;
                 letter-spacing: 0.3rem;
-                .animateIt(appearslowly, 4s, 0s, forwards);
+                visibility: hidden;
+                .animateIt(appearslowly, 4s, 2s, forwards);
             }
         }
     }
@@ -95,8 +144,10 @@
     a {text-decoration: none;}
 
     .header_btn {
-        .btnMaker(20rem, 4rem,rgb(236, 72, 52));
+        .btnMaker(17rem, 4rem,rgb(236, 72, 52));
         .mainFont;
+        visibility: hidden;
+        .animateIt(appearslowly, 4s, 2s, forwards);
     }
 
     .header_btn:hover {
