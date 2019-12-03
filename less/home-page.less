@@ -1,0 +1,98 @@
+/**************Boxes******************/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url('../img/header_img.jpg');
+    .backgroundIt;
+    text-align: center;
+
+    .box {position: relative;}
+
+    .box:hover {
+        .author_name {visibility: visible;}
+    }
+
+    .author_name {
+        color: @white-smoke;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        text-shadow: 1px 1px 0 black;
+        visibility: hidden;
+    }
+
+    div {
+        max-width: 450px;
+        max-height: 450px;
+        overflow: hidden;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s ease-in-out;
+        }
+
+        img:hover {transform: scale(1.15);}
+    }
+}
+
+
+/**************Call-To-Action******************/
+
+.call_action {
+    background: url('../img/header_img.jpg');
+    .backgroundIt;
+    height: 40vh;
+    color: @white-smoke;
+    width: 100%;
+
+    .overlay {
+        background-color: rgba(27, 27, 27, 0.5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        @media (max-width: 550px) {
+            flex-direction: column;
+            padding-top: 2rem;
+        }
+
+        .action_text {
+            padding-left: 0%;
+            width: 65%;
+        }
+
+        h3 {
+            font-size: 3rem;
+            .mainFont;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.3rem;
+        }
+
+        p {
+            .mainFont;
+            letter-spacing: 0.3rem;
+        }
+
+
+        a{
+            text-decoration: none;
+            .mainFont;
+        }
+
+        .action_btn {
+            .btnMaker(24rem, 4rem,rgb(236, 72, 52)); 
+            text-transform: uppercase;
+            padding-top: 1rem;    
+        }
+
+        .action_btn:hover{background-color: rgb(240, 94, 75);}
+    }
+}

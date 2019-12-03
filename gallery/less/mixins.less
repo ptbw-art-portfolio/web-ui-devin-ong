@@ -1,0 +1,40 @@
+.mainFont {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**************Animation******************/
+.animateIt(@name, @duration, @delay, @fillmode) {
+    animation: @name;
+    animation-duration: @duration;
+    animation-delay: @delay;
+    animation-fill-mode: @fillmode;
+}
+
+/**************Background******************/
+.backgroundIt {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**************Buttons******************/
+
+.btnMaker(@width, @height, @color) {
+    color: @white-smoke;
+    background-color: @color;
+    width: @width;
+    height: @height;
+    padding-top: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    letter-spacing: 0.4rem;
+}
+
+/**************Display******************/
+.displayIt(@display, @dir) {
+    display: @display;
+    flex-direction: @dir;
+}

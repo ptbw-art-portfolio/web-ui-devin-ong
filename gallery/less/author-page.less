@@ -1,0 +1,100 @@
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.40)), url('../../img/header_img.jpg');
+    .backgroundIt;
+    text-align: center;
+}
+
+/***************Call-To-Action************/
+.call_action {
+    background: url('../../img/header_img.jpg');
+    .backgroundIt;
+    height: 40vh;
+    color: @white-smoke;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+    }
+
+    .overlay {
+        background-color: rgba(27, 27, 27, 0.5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        @media (max-width: 550px) {
+            flex-direction: column;
+            padding-top: 2rem;
+        }
+
+        .action_text {
+            padding-left: 0%;
+            width: 65%;
+        }
+
+        h3 {
+            font-size: 3rem;
+            .mainFont;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.3rem;
+        }
+
+        p {
+            .mainFont;
+            letter-spacing: 0.3rem;
+        }
+
+
+
+        .action_btn {
+            padding-right: 20%;
+            width: 35%;
+            .mainFont;
+
+            div {
+                .btnMaker(22rem, 4rem, rgb(236, 72, 52));
+                color: @white-smoke;
+                padding-top: 0.9rem;
+                border-radius: 1rem;
+                font-size: 1.7rem;
+                margin: 0 auto;
+                margin-top: 2rem;
+                letter-spacing: 0.4rem;
+                text-transform: uppercase;
+            }
+
+            div:hover {
+                background-color: rgb(240, 94, 75);
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .author_info {
+        color: @white-smoke;
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        text-align: left;
+        margin-left: 10rem;
+        margin-top: 3rem;
+        letter-spacing: 0.4rem;
+
+        .author_by {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+
+            .authorNameIs {
+                margin-left: 2rem;
+                text-decoration: underline;
+            }
+        }
+    }
+}
